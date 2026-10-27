@@ -7,6 +7,11 @@ class CommunsPage {
         cy.get('.fa-lock').click()
     }
 
+    accessLoginPage() {
+        cy.visit('/').get('#top_header')
+        cy.get('.fa-user').click()
+    }
+
 }
 
 export default new CommunsPage();

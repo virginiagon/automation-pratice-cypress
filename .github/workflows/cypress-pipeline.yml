@@ -11,6 +11,9 @@ jobs:
         steps:
             - name: Checkout do projeto
               uses: actions/checkout@v7
+
+            - name: Install project dependencies
+              run: npm install
             
             - name: Run tests
               uses: cypress-io/github-action@v7
